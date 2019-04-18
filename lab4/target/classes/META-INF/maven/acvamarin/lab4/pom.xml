@@ -1,0 +1,109 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>acvamarin</groupId>
+	<artifactId>lab4</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>lab4</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
+		<spring.framework.version>5.1.6.RELEASE</spring.framework.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+
+			<groupId>org.springframework</groupId>
+
+			<artifactId>spring-context</artifactId>
+
+			<version>${spring.framework.version}</version>
+
+		</dependency>
+		<dependency>
+
+			<groupId>org.springframework.data</groupId>
+
+			<artifactId>spring-data-jpa</artifactId>
+
+			<version>2.1.6.RELEASE</version>
+
+
+		</dependency>
+		<dependency>
+
+			<groupId>commons-dbcp</groupId>
+
+			<artifactId>commons-dbcp</artifactId>
+
+			<version>1.4</version>
+
+
+		</dependency>
+		<dependency>
+
+			<groupId>org.hibernate</groupId>
+
+			<artifactId>hibernate-core</artifactId>
+
+			<version>5.4.2.Final</version>
+
+		</dependency>
+		<dependency>
+
+			<groupId>org.postgresql</groupId>
+
+			<artifactId>postgresql</artifactId>
+
+			<version>42.2.5</version>
+
+		</dependency>
+		
+		
+		<dependency>
+
+			<groupId>mysql</groupId>
+
+			<artifactId>mysql-connector-java</artifactId>
+
+			<version>5.1.6</version>
+
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/postgresql/postgresql -->
+		<dependency>
+			<groupId>postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>9.1-901-1.jdbc4</version>
+		</dependency>
+
+
+	</dependencies>
+	<build>
+
+		<plugins>
+
+			<plugin>
+
+				<artifactId>maven-compiler-plugin</artifactId>
+
+				<configuration>
+
+					<source>${java.version}</source>
+
+					<target>${java.version}</target>
+
+				</configuration>
+
+			</plugin>
+
+		</plugins>
+
+	</build>
+</project>
